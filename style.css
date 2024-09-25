@@ -1,0 +1,93 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+body {
+    font-size: 26px;
+    font-family: Roboto, sans-serif;
+    background-image: url('./img/gradiant.jpg');
+    background-size: cover;
+  }
+  
+  .main {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  #img {
+    border-radius: 5%;
+    width: 210px;
+    height: 210px;
+    opacity: 0.9;
+    background-image: url('./img/command_block.webp');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    margin: 0 auto;
+    position:relative;
+    top:20px;
+
+  }
+  
+  #text {
+    align-self: center;
+    padding: 50px;
+  }
+  
+  h4 {
+    color: rgb(214, 34, 34);
+    opacity: 0.8;
+  }
+  
+  .description {
+    font-size: 17px;
+    color: #08090b;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+    max-width: 850px;
+    padding: 10px;
+    background-color: #8bbfc8;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 50px;
+  }
+  
+  #github {
+    font-weight: bold;
+  }
+  
+  #github:hover {
+    color: crimson;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  #img:hover {
+    width: 220px;
+    height: 220px;
+    background-image: url('./img/chain_block.webp');
+    transition: 0.5s;
+    
+  }
+
+  #cmdb_text{
+    opacity: 0.0;
+    color:rgb(0, 255, 255);
+    font-family: Oswald;
+  }
+
+  body:has(#img:hover) #cmdb_text {
+    opacity: 1.0;
+    transition: 0.8s;
+    color:brown
+
+  }
